@@ -1,0 +1,25 @@
+name: app_theme
+description: the theme for the app
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+  flutter: ^3.24.0
+
+dependencies:
+  flex_seed_scheme: ^3.0.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.5
+  get_it: 7.2.0
+  google_fonts: ^6.2.1
+  injectable: ^2.4.2
+  lego_architecture_demo_mason:
+    path: ../../app/starter_app
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0
