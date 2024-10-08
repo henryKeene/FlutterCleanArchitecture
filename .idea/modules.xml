@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/packages/core/app_logging/melos_app_logging.iml" filepath="$PROJECT_DIR$/packages/core/app_logging/melos_app_logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/core/app_theme/melos_app_theme.iml" filepath="$PROJECT_DIR$/packages/core/app_theme/melos_app_theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/features/authentication/melos_authentication.iml" filepath="$PROJECT_DIR$/packages/features/authentication/melos_authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/features/contact/melos_contact.iml" filepath="$PROJECT_DIR$/packages/features/contact/melos_contact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/features/dashboard/melos_dashboard.iml" filepath="$PROJECT_DIR$/packages/features/dashboard/melos_dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/app/starter_app/melos_lego_architecture_demo_mason.iml" filepath="$PROJECT_DIR$/packages/app/starter_app/melos_lego_architecture_demo_mason.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/app/navigation/melos_navigation.iml" filepath="$PROJECT_DIR$/packages/app/navigation/melos_navigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/features/team/melos_team.iml" filepath="$PROJECT_DIR$/packages/features/team/melos_team.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_starter_app.iml" filepath="$PROJECT_DIR$/melos_starter_app.iml" />
+    </modules>
+  </component>
+</project>

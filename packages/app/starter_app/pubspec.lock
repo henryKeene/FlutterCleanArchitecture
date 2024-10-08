@@ -149,7 +149,7 @@ packages:
     source: hosted
     version: "1.18.0"
   contact:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../features/contact"
       relative: true
@@ -188,7 +188,7 @@ packages:
     source: hosted
     version: "2.3.7"
   dashboard:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../features/dashboard"
       relative: true
@@ -779,7 +779,7 @@ packages:
     source: hosted
     version: "1.2.0"
   team:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../features/team"
       relative: true

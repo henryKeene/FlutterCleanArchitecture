@@ -1,0 +1,14 @@
+# melos_managed_dependency_overrides: app_logging,app_theme,contact,dashboard,lego_architecture_demo_mason,team
+dependency_overrides:
+  app_logging:
+    path: ..\\..\\core\\app_logging
+  app_theme:
+    path: ..\\..\\core\\app_theme
+  contact:
+    path: ..\\..\\features\\contact
+  dashboard:
+    path: ..\\..\\features\\dashboard
+  lego_architecture_demo_mason:
+    path: ..\\starter_app
+  team:
+    path: ..\\..\\features\\team

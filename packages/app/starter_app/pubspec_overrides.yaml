@@ -1,0 +1,14 @@
+# melos_managed_dependency_overrides: app_logging,app_theme,contact,dashboard,navigation,team
+dependency_overrides:
+  app_logging:
+    path: ..\\..\\core\\app_logging
+  app_theme:
+    path: ..\\..\\core\\app_theme
+  contact:
+    path: ..\\..\\features\\contact
+  dashboard:
+    path: ..\\..\\features\\dashboard
+  navigation:
+    path: ..\\navigation
+  team:
+    path: ..\\..\\features\\team
