@@ -1,14 +1,18 @@
-# melos_managed_dependency_overrides: app_logging,app_theme,contact,dashboard,navigation,team
+# melos_managed_dependency_overrides: contact,core_authentication,core_logging,core_theme,dashboard,login_signup,navigation,team
 dependency_overrides:
-  app_logging:
-    path: ..\\..\\core\\app_logging
-  app_theme:
-    path: ..\\..\\core\\app_theme
   contact:
-    path: ..\\..\\features\\contact
+    path: ../../features/contact
+  core_authentication:
+    path: ../../core/core_authentication
+  core_logging:
+    path: ../../core/core_logging
+  core_theme:
+    path: ../../core/core_theme
   dashboard:
-    path: ..\\..\\features\\dashboard
+    path: ../../features/dashboard
+  login_signup:
+    path: ../../features/login_signup
   navigation:
-    path: ..\\navigation
+    path: ../navigation
   team:
-    path: ..\\..\\features\\team
+    path: ../../features/team

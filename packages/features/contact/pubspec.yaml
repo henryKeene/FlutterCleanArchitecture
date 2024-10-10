@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   get_it: 7.2.0
   flutter_bloc: ^8.1.5
+  core_authentication:
+    path: ../../core/core_authentication
 
 dev_dependencies:
   flutter_test:

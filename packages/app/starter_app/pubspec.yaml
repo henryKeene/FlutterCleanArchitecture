@@ -8,6 +8,14 @@ environment:
 
 dependencies:
   bloc: ^8.1.4
+  core_authentication:
+    path: ../../core/core_authentication
+  core_logging:
+    path: ../../core/core_logging
+  core_theme:
+    path: ../../core/core_theme
+  firebase_auth: ^4.17.5
+  firebase_core: ^2.25.4
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
@@ -16,10 +24,6 @@ dependencies:
   intl: ^0.19.0
   navigation:
     path: ../navigation
-  app_logging:
-    path: ../../core/app_logging
-  app_theme:
-    path: ../../core/app_theme
 
 dev_dependencies:
   bloc_test: ^9.1.7

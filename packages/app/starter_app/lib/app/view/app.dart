@@ -1,4 +1,4 @@
-import 'package:app_theme/app_theme.dart';
+import 'package:core_theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:lego_architecture_demo_mason/l10n/l10n.dart';
 import 'package:navigation/navigation.dart' as nav;

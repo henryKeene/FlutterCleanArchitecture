@@ -1,0 +1,124 @@
+{
+  "project_info": {
+    "project_number": "554284312664",
+    "project_id": "screenmedia-starterapps-v3",
+    "storage_bucket": "screenmedia-starterapps-v3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554284312664:android:d63eaf1d98bfba58a8c22d",
+        "android_client_info": {
+          "package_name": "com.waracle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdDHb8Caun0MV0OirW1aLm7AOOyFLGW_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554284312664:android:1b94e129cccb0dd3a8c22d",
+        "android_client_info": {
+          "package_name": "uk.co.screenmedia.flutterstarter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdDHb8Caun0MV0OirW1aLm7AOOyFLGW_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554284312664:android:6c4cb1294a9fbfcea8c22d",
+        "android_client_info": {
+          "package_name": "uk.co.screenmedia.flutterstarter.alpha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdDHb8Caun0MV0OirW1aLm7AOOyFLGW_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554284312664:android:d74237690ede49dfa8c22d",
+        "android_client_info": {
+          "package_name": "uk.co.screenmedia.flutterstarter.beta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdDHb8Caun0MV0OirW1aLm7AOOyFLGW_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554284312664:android:ca80a51e1d17b24aa8c22d",
+        "android_client_info": {
+          "package_name": "uk.co.screenmedia.flutterstarter.live"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdDHb8Caun0MV0OirW1aLm7AOOyFLGW_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554284312664:android:d7de5816d25c8ac3a8c22d",
+        "android_client_info": {
+          "package_name": "uk.co.screenmedia.test.sha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdDHb8Caun0MV0OirW1aLm7AOOyFLGW_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

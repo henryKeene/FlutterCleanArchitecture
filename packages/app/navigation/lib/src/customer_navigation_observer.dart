@@ -1,4 +1,4 @@
-import 'package:app_logging/logging.dart';
+import 'package:core_logging/logging.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 

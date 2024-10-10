@@ -10,12 +10,20 @@ class ContactPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Contact'),
+        actions: [
+          IconButton(
+            onPressed: context.read<ContactCubit>().logout,
+            icon: const Icon(Icons.logout),
+          ),
+        ],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Center(
-            child: Text('Contact Page'),
+            child: Text(
+              'Contact Page',
+            ),
           ),
           ElevatedButton(
             onPressed: context.read<ContactCubit>().navigateToLogging,

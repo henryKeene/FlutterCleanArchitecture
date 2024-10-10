@@ -1,14 +1,18 @@
-# melos_managed_dependency_overrides: app_logging,app_theme,contact,dashboard,lego_architecture_demo_mason,team
+# melos_managed_dependency_overrides: contact,core_authentication,core_logging,core_theme,dashboard,lego_architecture_demo_mason,login_signup,team
 dependency_overrides:
-  app_logging:
-    path: ..\\..\\core\\app_logging
-  app_theme:
-    path: ..\\..\\core\\app_theme
   contact:
-    path: ..\\..\\features\\contact
+    path: ../../features/contact
+  core_authentication:
+    path: ../../core/core_authentication
+  core_logging:
+    path: ../../core/core_logging
+  core_theme:
+    path: ../../core/core_theme
   dashboard:
-    path: ..\\..\\features\\dashboard
+    path: ../../features/dashboard
   lego_architecture_demo_mason:
-    path: ..\\starter_app
+    path: ../starter_app
+  login_signup:
+    path: ../../features/login_signup
   team:
-    path: ..\\..\\features\\team
+    path: ../../features/team

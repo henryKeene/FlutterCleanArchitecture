@@ -8,10 +8,14 @@ environment:
   flutter: ^3.24.0
 
 dependencies:
-  app_logging:
-    path: ../../core/app_logging
-  app_theme:
-    path: ../../core/app_theme
+  login_signup:
+    path: ../../features/login_signup
+  core_authentication:
+    path: ../../core/core_authentication
+  core_logging:
+    path: ../../core/core_logging
+  core_theme:
+    path: ../../core/core_theme
   contact:
     path: ../../features/contact
   dashboard:

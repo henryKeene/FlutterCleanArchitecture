@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBmy_ETm6Hb0BH3wcHqtA3Sf0m3NRFZKYo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>554284312664</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.waracle</string>
+	<key>PROJECT_ID</key>
+	<string>screenmedia-starterapps-v3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>screenmedia-starterapps-v3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:554284312664:ios:d59112824189ce15a8c22d</string>
+</dict>
+</plist>

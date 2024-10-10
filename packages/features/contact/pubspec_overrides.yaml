@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: core_authentication
+dependency_overrides:
+  core_authentication:
+    path: ../../core/core_authentication
