@@ -8,6 +8,8 @@ environment:
   flutter: ^3.24.0
 
 dependencies:
+  drift: ^2.19.1+1
+  drift_flutter: 0.1.0
   flex_seed_scheme: ^3.0.0
   flutter:
     sdk: flutter
@@ -19,7 +21,10 @@ dependencies:
     path: ../../app/starter_app
 
 dev_dependencies:
+  build_runner: ^2.4.13
+  drift_dev: ^2.19.1
   flutter_test:
     sdk: flutter
+  injectable_generator: ^2.6.1
   mocktail: ^1.0.4
   very_good_analysis: ^6.0.0

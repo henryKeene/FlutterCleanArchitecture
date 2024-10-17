@@ -11,9 +11,9 @@ import 'package:flutter/material.dart';
 sealed class AppColorScheme {
   /// App's light ColorScheme.
   static final ColorScheme light = SeedColorScheme.fromSeeds(
-    primaryKey: ThemeTokens.darkPurple,
-    secondaryKey: ThemeTokens.darkBlue,
-    tertiaryKey: ThemeTokens.lightBlue,
+    primaryKey: ThemeTokens.avocado,
+    secondaryKey: ThemeTokens.avocadoRipe,
+    tertiaryKey: ThemeTokens.avocadoPrime,
     // We use the tones chroma that has colorfulness that is fully driven
     // by the given key colors' chromacity. We also make all surface shades
     // monochrome on none Android builds or if it is a web build.
@@ -24,36 +24,36 @@ sealed class AppColorScheme {
     // TIP: Visualize the color scheme without any pinned colors first and
     // then see what colors you need to pin to get the desired result and where
     // the colors in your palette will fit in the generated color scheme.
-    // primary: ThemeTokens.avocado,
-    // primaryContainer: ThemeTokens.avocadoMeat,
-    // secondary: ThemeTokens.avocadoRipe,
-    // secondaryContainer: ThemeTokens.avocadoTender,
-    // tertiary: ThemeTokens.avocadoCore,
-    // tertiaryContainer: ThemeTokens.effectLight,
-    // onTertiaryContainer: ThemeTokens.effectDark,
+    primary: ThemeTokens.avocado,
+    primaryContainer: ThemeTokens.avocadoMeat,
+    secondary: ThemeTokens.avocadoRipe,
+    secondaryContainer: ThemeTokens.avocadoTender,
+    tertiary: ThemeTokens.avocadoCore,
+    tertiaryContainer: ThemeTokens.effectLight,
+    onTertiaryContainer: ThemeTokens.effectDark,
   );
 
   /// App's dark ColorScheme.
   static final ColorScheme dark = SeedColorScheme.fromSeeds(
     brightness: Brightness.dark,
     // Use the same key colors and tones as light mode in dark mode.
-    primaryKey: ThemeTokens.darkPurple,
-    secondaryKey: ThemeTokens.darkBlue,
-    tertiaryKey: ThemeTokens.lightBlue,
+    primaryKey: ThemeTokens.avocado,
+    secondaryKey: ThemeTokens.avocadoRipe,
+    tertiaryKey: ThemeTokens.avocadoPrime,
     tones: FlexTones.chroma(Brightness.dark)
         .monochromeSurfaces(ThemeTokens.isNotAndroidOrIsWeb),
 
     // Color overrides to design token values.
     // Overrides are different from light mode, typically inverse selections,
     // but you can also deviate from this when appropriate as done here.
-    // primary: ThemeTokens.avocadoLush,
-    // primaryContainer: ThemeTokens.avocadoPrime,
-    // onPrimaryContainer: ThemeTokens.avocado,
-    // secondary: ThemeTokens.avocadoTender,
-    // secondaryContainer: ThemeTokens.avocadoRipe,
-    // tertiary: ThemeTokens.effectLight,
-    // onTertiary: ThemeTokens.effectDark,
-    // tertiaryContainer: ThemeTokens.avocadoCore,
-    // onTertiaryContainer: ThemeTokens.effectLight,
+    primary: ThemeTokens.avocadoLush,
+    primaryContainer: ThemeTokens.avocadoPrime,
+    onPrimaryContainer: ThemeTokens.avocado,
+    secondary: ThemeTokens.avocadoTender,
+    secondaryContainer: ThemeTokens.avocadoRipe,
+    tertiary: ThemeTokens.effectLight,
+    onTertiary: ThemeTokens.effectDark,
+    tertiaryContainer: ThemeTokens.avocadoCore,
+    onTertiaryContainer: ThemeTokens.effectLight,
   );
 }

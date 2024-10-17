@@ -31,11 +31,9 @@ class FirebaseAuthService implements IFirebaseAuthService {
   @override
   TaskEither<AuthFailure, Unit> signOut() => TaskEither.tryCatch(
         () async {
-          print('signing out');
           return _firebaseAuth.signOut().then((value) => unit);
         },
         (e, s) {
-          print('sign out error: $e');
           return const AuthFailure.unexpected();
         },
       );

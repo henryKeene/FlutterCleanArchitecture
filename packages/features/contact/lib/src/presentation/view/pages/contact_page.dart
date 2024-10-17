@@ -34,6 +34,11 @@ class ContactPage extends StatelessWidget {
             onPressed: context.read<ContactCubit>().navigateToThemeShowcase,
             child: const Text('Theme Showcase'),
           ),
+          const SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: context.read<ContactCubit>().openOfflineModal,
+            child: const Text('Offline Modal'),
+          ),
         ],
       ),
     );

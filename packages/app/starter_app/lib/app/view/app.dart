@@ -1,5 +1,8 @@
 import 'package:core_theme/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get_it/get_it.dart';
+import 'package:lego_architecture_demo_mason/app/view/cubits/cubit/theme_handler_cubit.dart';
 import 'package:lego_architecture_demo_mason/l10n/l10n.dart';
 import 'package:navigation/navigation.dart' as nav;
 
@@ -8,20 +11,33 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      theme: AppTheme.use(
-        Brightness.light,
-        const ThemeSettings(
-          useMaterial3: true,
-          zoomBlogFonts: false,
-          themeMode: ThemeMode.light,
-        ),
+    return BlocProvider(
+      create: (context) => GetIt.I<ThemeHandlerCubit>()..initialise(),
+      child: BlocBuilder<ThemeHandlerCubit, ThemeHandlerState>(
+        builder: (context, state) {
+          return MaterialApp.router(
+            theme: AppTheme.use(
+              switch (state) {
+                ThemeLight() => Brightness.light,
+                ThemeDark() => Brightness.dark,
+              },
+              ThemeSettings(
+                useMaterial3: true,
+                zoomBlogFonts: false,
+                themeMode: switch (state) {
+                  ThemeLight() => ThemeMode.light,
+                  ThemeDark() => ThemeMode.dark,
+                },
+              ),
+            ),
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
+            routeInformationParser: nav.routeInformationParser,
+            routeInformationProvider: nav.routeInformationProvider,
+            routerDelegate: nav.routerDelegate,
+          );
+        },
       ),
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
-      routeInformationParser: nav.routeInformationParser,
-      routeInformationProvider: nav.routeInformationProvider,
-      routerDelegate: nav.routerDelegate,
     );
   }
 }

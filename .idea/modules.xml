@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/packages/app/starter_app/melos_lego_architecture_demo_mason.iml" filepath="$PROJECT_DIR$/packages/app/starter_app/melos_lego_architecture_demo_mason.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/features/login_signup/melos_login_signup.iml" filepath="$PROJECT_DIR$/packages/features/login_signup/melos_login_signup.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/app/navigation/melos_navigation.iml" filepath="$PROJECT_DIR$/packages/app/navigation/melos_navigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/features/offline/melos_offline.iml" filepath="$PROJECT_DIR$/packages/features/offline/melos_offline.iml" />
       <module fileurl="file://$PROJECT_DIR$/packages/features/team/melos_team.iml" filepath="$PROJECT_DIR$/packages/features/team/melos_team.iml" />
       <module fileurl="file://$PROJECT_DIR$/melos_starter_app.iml" filepath="$PROJECT_DIR$/melos_starter_app.iml" />
     </modules>

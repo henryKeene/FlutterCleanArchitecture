@@ -11,4 +11,9 @@ class ContactNavigation implements IContactNavigation {
   void navigateToThemeShowcase() {
     router.go('/contact/theme');
   }
+
+  @override
+  void openOfflineModal() {
+    router.push('/offline');
+  }
 }

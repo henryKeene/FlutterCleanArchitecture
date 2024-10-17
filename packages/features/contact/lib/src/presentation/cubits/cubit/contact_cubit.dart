@@ -19,6 +19,10 @@ class ContactCubit extends Cubit<ContactState> {
     _contactNavigation.navigateToThemeShowcase();
   }
 
+  void openOfflineModal() {
+    _contactNavigation.openOfflineModal();
+  }
+
   void logout() {
     _firebaseAuthService.signOut().run();
   }

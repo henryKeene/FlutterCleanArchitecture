@@ -1,3 +1,4 @@
+import 'package:async/async.dart' show StreamGroup;
 import 'package:contact/contact.dart';
 import 'package:core_authentication/core_authentication.dart';
 import 'package:core_logging/logging.dart';
@@ -11,17 +12,22 @@ import 'package:navigation/src/customer_navigation_observer.dart';
 import 'package:navigation/src/models/stream_to_listenable.dart';
 import 'package:navigation/src/redirects/authentication_redirect.dart';
 import 'package:navigation/src/view/bottom_nav_bar.dart';
+import 'package:navigation/src/view/bottom_sheet_page.dart';
+import 'package:offline/offline.dart';
 import 'package:team/team.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
+final _shellNavigatorKey = GlobalKey<NavigatorState>();
+
+final authStream = GetIt.I<IFirebaseAuthService>().authStateChanges;
 
 final router = GoRouter(
   navigatorKey: _rootNavigatorKey,
   observers: [CustomNavigationObserver()],
   refreshListenable: GoRouterRefreshStream(
-    GetIt.I<IFirebaseAuthService>().authStateChanges,
+    StreamGroup.merge([authStream]),
   ),
-  redirect: (context, state) => AuthenticationRedirect().rootRedirect(),
+  redirect: (context, state) async => AuthenticationRedirect().rootRedirect(),
   routes: [
     GoRoute(path: '/', redirect: (_, __) => '/home'),
     GoRoute(
@@ -31,7 +37,14 @@ final router = GoRouter(
         child: AuthenticationFlow(),
       ),
     ),
+    GoRoute(
+      path: '/offline',
+      parentNavigatorKey: _rootNavigatorKey,
+      pageBuilder: (context, state) =>
+          BottomSheetPage(child: const OfflineFlow(), key: state.pageKey),
+    ),
     ShellRoute(
+      navigatorKey: _shellNavigatorKey,
       builder: (context, state, child) => BottomNavBar(
         currentIndex: switch (state.topRoute?.path) {
           '/home' => 0,

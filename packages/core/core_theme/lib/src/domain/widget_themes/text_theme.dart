@@ -45,8 +45,8 @@ class AppTextTheme {
   // Instead make a new TextStyle that fits your component and use it in the
   // component theme.
   static TextStyle appBarTextStyle(ColorScheme scheme) {
-    return GoogleFonts.lobster(
-      fontWeight: FontWeight.w400,
+    return GoogleFonts.afacad(
+      fontWeight: FontWeight.w500,
       fontSize: 26,
       color: scheme.primary,
     );
