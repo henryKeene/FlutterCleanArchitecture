@@ -17,8 +17,8 @@ class LoggingFlow extends StatefulWidget {
 class _LoggingFlowState extends State<LoggingFlow> {
   @override
   void initState() {
-    super.initState();
     initialize();
+    super.initState();
   }
 
   @override
@@ -37,7 +37,9 @@ class _LoggingFlowState extends State<LoggingFlow> {
           return [
             const MaterialPage(child: LogPage()),
             if (state is LoggingFlowLogDetailState)
-              MaterialPage(child: LogDetailsPage(log: state.log)),
+              MaterialPage(
+                child: LogDetailsPage(log: state.log),
+              ),
           ];
         },
       ),

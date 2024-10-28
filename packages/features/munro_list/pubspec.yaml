@@ -1,0 +1,32 @@
+name: munro_list
+description: The list of all munros
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+  flutter: ^3.24.0
+
+dependencies:
+  core_munros_data:
+    path: ../../core/core_munros_data
+  csv: ^6.0.0
+  drift: 2.19.1+1
+  drift_flutter: 0.1.0
+  flow_builder: ^0.1.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.5
+  get_it: 7.2.0
+  injectable: ^2.4.2
+  lego_architecture_demo_mason:
+    path: ../../app/starter_app
+
+dev_dependencies:
+  build_runner: ^2.4.9
+  drift_dev: 2.19.1
+  flutter_test:
+    sdk: flutter
+  injectable_generator: ^2.6.1
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0

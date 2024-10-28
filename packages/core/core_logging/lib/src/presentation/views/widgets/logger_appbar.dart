@@ -1,5 +1,7 @@
 import 'package:adaptive_dialog/adaptive_dialog.dart';
 import 'package:core_logging/src/presentation/cubits/logger_cubit.dart';
+import 'package:core_logging/src/presentation/flow/logging_flow_state.dart';
+import 'package:flow_builder/flow_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -13,6 +15,9 @@ class LoggerAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      leading: BackButton(
+        onPressed: () => context.flow<LoggingFlowState>().complete(),
+      ),
       title: const Text('Logs'),
       actions: state.maybeMap(
         logsExist: (e) => [

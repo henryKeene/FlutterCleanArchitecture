@@ -14,11 +14,13 @@ dependencies:
     path: ../../core/core_logging
   core_theme:
     path: ../../core/core_theme
+  core_munros_data:
+    path: ../../core/core_munros_data
   firebase_auth: ^4.17.5
   firebase_core: ^2.25.4
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.6
+  flutter_bloc: ^8.1.5
   flutter_localizations:
     sdk: flutter
   get_it: 7.2.0

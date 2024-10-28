@@ -23,32 +23,26 @@ class BottomNavBar extends StatelessWidget {
         child: Scaffold(
           extendBody: true,
           body: child,
-          bottomNavigationBar: BottomNavigationBar(
-            enableFeedback: true,
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
-            onTap: (index) => switch (index) {
+          bottomNavigationBar: NavigationBar(
+            selectedIndex: currentIndex,
+            onDestinationSelected: (index) => switch (index) {
               0 => router.go('/home'),
               1 => router.go('/team'),
               2 => router.go('/contact'),
               _ => router.go('/'),
             },
-            currentIndex: currentIndex,
-            items: const [
-              BottomNavigationBarItem(
+            destinations: const [
+              NavigationDestination(
                 icon: Icon(Icons.home_outlined),
-                activeIcon: Icon(Icons.home),
-                label: 'home',
+                label: 'Dashboard',
               ),
-              BottomNavigationBarItem(
+              NavigationDestination(
                 icon: Icon(Icons.people_outline),
-                activeIcon: Icon(Icons.people),
                 label: 'Team',
               ),
-              BottomNavigationBarItem(
+              NavigationDestination(
                 icon: Icon(Icons.contact_mail_outlined),
-                activeIcon: Icon(Icons.contact_mail),
-                label: 'Contact Us',
+                label: 'Contact',
               ),
             ],
           ),

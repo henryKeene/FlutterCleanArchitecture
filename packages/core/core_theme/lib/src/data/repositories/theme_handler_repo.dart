@@ -8,17 +8,6 @@ class ThemeHandlerRepo {
   final ThemeDatabase _themeDatabase = ThemeDatabase();
 
   Future<ThemeMode> getCurrentTheme() async {
-    final themes = await _themeDatabase.managers.themeTable.get();
-
-    if (themes.isEmpty) {
-      await _themeDatabase.managers.themeTable.bulkCreate(
-        (o) => [
-          o(id: const Value(1), isSelected: true),
-          o(id: const Value(2), isSelected: false),
-        ],
-      );
-    }
-
     final selectedTheme = await _themeDatabase.managers.themeTable
         .filter((f) => f.isSelected.equals(true))
         .getSingle();

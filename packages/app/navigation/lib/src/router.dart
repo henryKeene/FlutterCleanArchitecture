@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:go_router/go_router.dart';
 import 'package:login_signup/login_signup.dart';
+import 'package:munro_list/munro_list.dart';
 import 'package:navigation/src/customer_navigation_observer.dart';
 import 'package:navigation/src/models/stream_to_listenable.dart';
 import 'package:navigation/src/redirects/authentication_redirect.dart';
@@ -59,6 +60,18 @@ final router = GoRouter(
           path: '/home',
           pageBuilder: (context, state) =>
               const NoTransitionPage(child: DashboardFlow()),
+          routes: [
+            GoRoute(
+              parentNavigatorKey: _rootNavigatorKey,
+              path: 'munro_list',
+              name: 'munro_list',
+              pageBuilder: (context, state) => MaterialPage(
+                child: MunroListFlow(
+                  onlyShowClimbed: state.extra as bool? ?? false,
+                ),
+              ),
+            ),
+          ],
         ),
         GoRoute(
           path: '/team',

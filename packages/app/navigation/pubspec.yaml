@@ -24,6 +24,8 @@ dependencies:
     sdk: flutter
   get_it: 7.2.0
   go_router: ^14.2.8
+  munro_list:
+    path: ../../features/munro_list
   offline:
     path: ../../features/offline
   team:

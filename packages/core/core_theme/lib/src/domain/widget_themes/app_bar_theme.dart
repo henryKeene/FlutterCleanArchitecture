@@ -12,7 +12,9 @@ class AppAppBarTheme {
     required bool isLight,
   }) {
     return AppBarTheme(
-      backgroundColor: scheme.surface.withOpacity(isLight ? 0.96 : 0.95),
+      backgroundColor: isLight
+          ? scheme.surfaceContainerLow.withOpacity(0.96)
+          : scheme.surfaceContainer.withOpacity(0.95),
       foregroundColor: scheme.secondary,
       elevation: 0,
       scrolledUnderElevation: isLight ? 0.5 : 2,
@@ -64,14 +66,14 @@ class AppAppBarTheme {
       backgroundColor: isLight
           ? scheme.surfaceContainerLow.withOpacity(0.96)
           : scheme.surfaceContainer.withOpacity(0.95),
-      indicatorColor: scheme.primary,
+      indicatorColor: scheme.secondaryContainer,
       iconTheme: WidgetStateProperty.resolveWith((Set<WidgetState> states) {
         return IconThemeData(
           size: 24,
           color: states.contains(WidgetState.disabled)
               ? scheme.onSurfaceVariant.withOpacity(0.38)
               : states.contains(WidgetState.selected)
-                  ? scheme.onPrimary
+                  ? scheme.onSecondaryContainer
                   : scheme.onSurfaceVariant,
         );
       }),

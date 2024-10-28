@@ -21,4 +21,19 @@ class ThemeDatabase extends _$ThemeDatabase {
   static QueryExecutor _openConnection() {
     return driftDatabase(name: 'theme_database');
   }
+
+  @override
+  MigrationStrategy get migration => MigrationStrategy(
+        onCreate: (m) async {
+          await m.createAll();
+
+          await into(themeTable).insert(
+            ThemeTableCompanion.insert(id: const Value(1), isSelected: true),
+          );
+
+          await into(themeTable).insert(
+            ThemeTableCompanion.insert(id: const Value(2), isSelected: false),
+          );
+        },
+      );
 }
