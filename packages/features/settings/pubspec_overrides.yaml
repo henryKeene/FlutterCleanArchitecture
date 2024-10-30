@@ -1,4 +1,4 @@
-# melos_managed_dependency_overrides: contact,core_authentication,core_logging,core_munros_data,core_theme,lego_architecture_demo_mason,login_signup,munro_list,navigation,offline,settings,team
+# melos_managed_dependency_overrides: contact,core_authentication,core_logging,core_munros_data,core_theme,dashboard,lego_architecture_demo_mason,login_signup,munro_list,navigation,offline,team
 dependency_overrides:
   contact:
     path: ../contact
@@ -10,6 +10,8 @@ dependency_overrides:
     path: ../../core/core_munros_data
   core_theme:
     path: ../../core/core_theme
+  dashboard:
+    path: ../dashboard
   lego_architecture_demo_mason:
     path: ../../app/starter_app
   login_signup:
@@ -20,7 +22,5 @@ dependency_overrides:
     path: ../../app/navigation
   offline:
     path: ../offline
-  settings:
-    path: ../settings
   team:
     path: ../team

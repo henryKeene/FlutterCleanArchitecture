@@ -14,4 +14,6 @@ abstract interface class IMunrosService {
     required DateTime dateClimbed,
     String? notes,
   });
+
+  Future<List<Munro>> searchForMunro(String searchTerm);
 }

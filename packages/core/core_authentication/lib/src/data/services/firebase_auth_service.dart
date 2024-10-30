@@ -25,7 +25,15 @@ class FirebaseAuthService implements IFirebaseAuthService {
               password: password,
             )
             .then((_) => unit),
-        (e, s) => const AuthFailure.unexpected(),
+        (error, stracktrace) {
+          error as FirebaseAuthException;
+
+          if (error.code == 'invalid-email') {
+            return const AuthFailure.invalidEmail();
+          } else {
+            return const AuthFailure.unexpected();
+          }
+        },
       );
 
   @override

@@ -30,6 +30,8 @@ dependencies:
     path: ../../features/offline
   team:
     path: ../../features/team
+  settings:
+    path: ../../features/settings
   async: ^2.11.0
 
 dev_dependencies:

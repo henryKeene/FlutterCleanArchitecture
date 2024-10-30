@@ -18,6 +18,10 @@ class DashboardCubit extends Cubit<DashboardState> {
     _navigation.navigateToMunroList(onlyShowClimbed: onlyShowClimbed);
   }
 
+  void navigateToSettings() {
+    _navigation.navigateToSettings();
+  }
+
   Future<void> loadDashboardData() async {
     emit(DashboardLoading());
     final completeionPercentage =

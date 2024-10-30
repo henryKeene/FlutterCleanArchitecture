@@ -6,4 +6,9 @@ class DashboardNavigation implements IDashboardNavigation {
   void navigateToMunroList({bool onlyShowClimbed = false}) {
     router.go('/home/munro_list', extra: onlyShowClimbed);
   }
+
+  @override
+  void navigateToSettings() {
+    router.go('/home/settings');
+  }
 }

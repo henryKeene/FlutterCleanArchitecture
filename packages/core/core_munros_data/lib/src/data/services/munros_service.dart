@@ -20,7 +20,7 @@ class MunrosService implements IMunrosService {
 
   @override
   Future<Map<RegionEnum, List<Munro>>> getAllMunrosSortedByRegion({
-     bool onlyShowClimbed = false,
+    bool onlyShowClimbed = false,
   }) async {
     final munrosByRegion = <RegionEnum, List<Munro>>{};
     for (final region in RegionEnum.values) {
@@ -46,5 +46,20 @@ class MunrosService implements IMunrosService {
       dateClimbed: dateClimbed,
       notes: notes,
     );
+  }
+
+  @override
+  Future<List<Munro>> searchForMunro(String searchTerm) async {
+    return _munrosRepo.getMunros().then((munros) {
+      return munros
+          .where(
+            (munro) => munro.name.toLowerCase().contains(
+                  searchTerm.toLowerCase(),
+                ),
+          )
+          .toList()
+          .take(10)
+          .toList();
+    });
   }
 }

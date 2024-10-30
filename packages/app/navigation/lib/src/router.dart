@@ -15,6 +15,7 @@ import 'package:navigation/src/redirects/authentication_redirect.dart';
 import 'package:navigation/src/view/bottom_nav_bar.dart';
 import 'package:navigation/src/view/bottom_sheet_page.dart';
 import 'package:offline/offline.dart';
+import 'package:settings/settings.dart';
 import 'package:team/team.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -28,7 +29,8 @@ final router = GoRouter(
   refreshListenable: GoRouterRefreshStream(
     StreamGroup.merge([authStream]),
   ),
-  redirect: (context, state) async => AuthenticationRedirect().rootRedirect(),
+  redirect: (context, state) =>
+      AuthenticationRedirect().rootRedirect(context, state),
   routes: [
     GoRoute(path: '/', redirect: (_, __) => '/home'),
     GoRoute(
@@ -61,6 +63,13 @@ final router = GoRouter(
           pageBuilder: (context, state) =>
               const NoTransitionPage(child: DashboardFlow()),
           routes: [
+            GoRoute(
+              parentNavigatorKey: _rootNavigatorKey,
+              path: 'settings',
+              pageBuilder: (context, state) {
+                return const MaterialPage(child: SettingsFlow());
+              },
+            ),
             GoRoute(
               parentNavigatorKey: _rootNavigatorKey,
               path: 'munro_list',

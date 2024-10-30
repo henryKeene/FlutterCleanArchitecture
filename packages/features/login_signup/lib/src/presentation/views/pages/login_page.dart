@@ -9,8 +9,40 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<AuthCubit, AuthState>(
+    return BlocConsumer<AuthCubit, AuthState>(
+      listener: (context, state) async {
+        if (state.isLoading) return;
+
+        return state.failure.isSome()
+            ? await showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                  title: const Text('Error'),
+                  content: Text(
+                    state.failure.fold(
+                      () => '',
+                      (failure) => 'Error occurred: $failure',
+                    ),
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: const Text('OK'),
+                    ),
+                  ],
+                ),
+              )
+            : null;
+      },
       builder: (context, state) {
+        String? errorText;
+        if (state.failure.isSome()) {
+          state.failure.fold(() {}, (failure) {
+            errorText = 'Error occurred: $failure';
+          });
+        }
         return Scaffold(
           appBar: AppBar(
             title: const Text('Login'),
@@ -22,6 +54,7 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 children: [
                   TextFormField(
+                    forceErrorText: errorText,
                     decoration: const InputDecoration(labelText: 'Email'),
                     onChanged: (value) =>
                         context.read<AuthCubit>().emailChanged(value),

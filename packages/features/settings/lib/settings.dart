@@ -1,4 +1,4 @@
 /// The settings page for the app
 library;
 
-export 'src/settings.dart';
+export 'src/presentation/flow/settings_flow.dart';
