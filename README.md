@@ -1,4 +1,4 @@
-# Lego Architecture Demo
+# clean Architecture Demo
 
 A Flutter demonstration project showcasing a modern, scalable architecture using a package-based approach. This project serves as a reference implementation for building large-scale Flutter applications with clean architecture principles.
 
