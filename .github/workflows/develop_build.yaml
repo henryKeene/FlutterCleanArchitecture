@@ -1,0 +1,36 @@
+name: Develop Build (Alpha)
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  build_alpha:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Flutter with FVM
+        uses: kuhnroyal/flutter-fvm-config-action/setup@v3
+
+      - name: Setup Melos
+        uses: bluefireteam/melos-action@v3
+        with:
+          run-bootstrap: true
+
+      - name: Run all tests
+        run: melos run test
+
+      - name: Build Alpha APK
+        run: flutter build apk --flavor alpha -t lib/main_development.dart
+        working-directory: packages/app/starter_app
+
+      # Upload the APK as an artifact
+      # - name: Upload Alpha APK
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: app-alpha-release
+      #     path: packages/app/starter_app/build/app/outputs/flutter-apk/app-alpha-release.apk

@@ -1,21 +1,20 @@
-name: lego_architecture_demo_mason
+name: starter_app
 description: Demo project for package based architecute
 version: 1.0.0+1
 publish_to: none
 
 environment:
-  sdk: ^3.5.0
+  sdk: ">=3.6.0 <4.0.0"
+
+# Configure for Dart Workspace resolution
+resolution: workspace
 
 dependencies:
   bloc: ^8.1.4
-  core_authentication:
-    path: ../../core/core_authentication
-  core_logging:
-    path: ../../core/core_logging
-  core_theme:
-    path: ../../core/core_theme
-  core_munros_data:
-    path: ../../core/core_munros_data
+  core_authentication: any
+  core_logging: any
+  core_theme: any
+  core_munros_data: any
   firebase_auth: ^4.17.5
   firebase_core: ^2.25.4
   flutter:
@@ -25,13 +24,11 @@ dependencies:
     sdk: flutter
   get_it: 7.2.0
   intl: ^0.19.0
-
-  navigation:
-    path: ../navigation
-  offline:
-    path: ../../features/offline
+  navigation: any
+  offline: any
 
 dev_dependencies:
+  core_analysis: any
   bloc_test: ^9.1.7
   flutter_test:
     sdk: flutter

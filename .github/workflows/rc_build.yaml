@@ -1,0 +1,36 @@
+name: Release Candidate Build (Beta)
+
+on:
+  push:
+    branches: [release-candidate]
+
+jobs:
+  build_beta:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Flutter with FVM
+        uses: kuhnroyal/flutter-fvm-config-action/setup@v3
+
+      - name: Setup Melos
+        uses: bluefireteam/melos-action@v3
+        with:
+          run-bootstrap: true
+
+      - name: Run all tests
+        run: melos run test
+
+      - name: Build Beta APK
+        run: flutter build apk --flavor beta -t lib/main_staging.dart
+        working-directory: packages/app/starter_app
+
+      # Upload the APK as an artifact
+      # - name: Upload Beta APK
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: app-beta-release
+      #     path: packages/app/starter_app/build/app/outputs/flutter-apk/app-beta-release.apk

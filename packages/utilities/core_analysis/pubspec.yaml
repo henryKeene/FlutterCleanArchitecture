@@ -1,0 +1,10 @@
+name: core_analysis
+description: Miniclient linter rules
+version: 0.0.1
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  very_good_analysis: ^6.0.0

@@ -4,37 +4,30 @@ version: 0.1.0+1
 publish_to: none
 
 environment:
-  sdk: ^3.5.0
-  flutter: ^3.24.0
+  sdk: ">=3.6.0 <4.0.0"
+
+# Configure for Dart Workspace resolution
+resolution: workspace
 
 dependencies:
-  login_signup:
-    path: ../../features/login_signup
-  core_authentication:
-    path: ../../core/core_authentication
-  core_logging:
-    path: ../../core/core_logging
-  core_theme:
-    path: ../../core/core_theme
-  contact:
-    path: ../../features/contact
-  dashboard:
-    path: ../../features/dashboard
+  login_signup: any
+  core_authentication: any
+  core_logging: any
+  core_theme: any
+  contact: any
+  dashboard: any
   flutter:
     sdk: flutter
   get_it: 7.2.0
   go_router: ^14.2.8
-  munro_list:
-    path: ../../features/munro_list
-  offline:
-    path: ../../features/offline
-  team:
-    path: ../../features/team
-  settings:
-    path: ../../features/settings
+  munro_list: any
+  offline: any
+  team: any
+  settings: any
   async: ^2.11.0
 
 dev_dependencies:
+  core_analysis: any
   build_runner: ^2.4.9
   flutter_test:
     sdk: flutter

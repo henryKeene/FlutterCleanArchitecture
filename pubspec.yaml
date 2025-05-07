@@ -1,6 +1,103 @@
-name: starter_app
-
+name: starter_app_root
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.6.0 <4.0.0"
+
+# Define the packages included in the workspace
+workspace:
+  - packages/app/starter_app
+  - packages/app/navigation
+
+  - packages/utilities/core_logging
+  - packages/utilities/core_theme
+  - packages/utilities/core_authentication
+  - packages/utilities/core_munros_data
+  - packages/utilities/core_analytics
+  - packages/utilities/core_analysis
+
+  - packages/features/contact
+  - packages/features/dashboard
+  - packages/features/login_signup
+  - packages/features/munro_list
+  - packages/features/offline
+  - packages/features/settings
+  - packages/features/team
+
+dependencies:
+  get_it: 7.2.0
+  flutter_bloc: ^8.1.5
+
 dev_dependencies:
-  melos: ^6.2.0
+  melos: ^7.0.0-dev.8
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0
+
+# Melos configuration
+melos:
+  repository: https://github.com/henrykeene/FlutterCleanArchitecture
+  sdkPath: .fvm/flutter_sdk
+
+  # Scripts that can be executed with `melos run <script_name>`
+  scripts:
+    analyze:
+      description: Run flutter analyze in all packages.
+      run: melos exec --concurrency=5 -- "flutter analyze ."
+
+    test:
+      description: Run flutter test in all packages with tests.
+      run: melos exec --concurrency=5 --dir-exists=test --fail-fast -- "flutter test --coverage"
+
+    test:diff:
+      description: Run tests only on packages changed since the main branch.
+      run: melos exec --diff=origin/main --concurrency=5 --dir-exists=test --fail-fast -- "flutter test --coverage"
+
+    build_runner:all:
+      description: Run build_runner build in all packages.
+      run: melos exec --concurrency=1 -- "dart run build_runner build --delete-conflicting-outputs"
+
+    build_runner:diff:
+      description: Run build_runner only on changed packages.
+      run: melos exec --diff=origin/main --concurrency=1 -- "dart run build_runner build --delete-conflicting-outputs"
+
+    format:
+      description: Run dart format in all packages.
+      run: melos exec --concurrency=5 -- "dart format ."
+
+  # Command configurations
+  command:
+    version:
+      # Enable automated version calculation and changelog generation
+      version: true
+      changelog: true
+
+      # Generate links to commits in changelogs
+      linkToCommits: true
+
+      # Create a single aggregated changelog at the workspace root
+      workspaceChangelog: true
+
+      # Disable default per-package Git tagging
+      gitTagVersion: false
+
+      # Customize the commit message for version bumps
+      message: "chore(release): Prepare release {new_package_versions}"
+
+      # Hooks for the version command
+      hooks:
+        preCommit: |
+          echo "Running Melos preCommit hook..."
+          # Extract version from the main app package
+          version=$(grep '^version:' packages/app/starter_app/pubspec.yaml | sed 's/version: //' | cut -d'+' -f1)
+          echo "$version" > VERSION
+          git add VERSION
+          dart format .
+          git add .
+
+    publish:
+      hooks:
+        pre: |
+          echo "Running Melos pre-publish hook..."
+          # Run final checks before release
+
+        post: |
+          echo "Running Melos post-publish hook..."
+          # Clean up after release process

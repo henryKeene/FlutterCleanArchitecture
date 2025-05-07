@@ -1,0 +1,34 @@
+name: PR Checks
+
+on:
+  pull_request:
+    branches: [develop, release-candidate, main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # Fetch history for accurate diff
+          fetch-depth: 0
+
+      - name: Setup Flutter with FVM
+        uses: kuhnroyal/flutter-fvm-config-action/setup@v3
+
+      - name: Setup Melos
+        uses: bluefireteam/melos-action@v3
+        with:
+          run-bootstrap: true
+
+      - name: Analyze code
+        run: melos run analyze
+
+      - name: Run tests on changed packages
+        # Run tests only on packages changed in the PR
+        run: melos exec --diff=${{ github.base_ref }} --concurrency=5 --dir-exists=test --fail-fast -- "flutter test --coverage"
+
+      # Optional: Run build_runner on changed packages if needed
+      - name: Run build_runner on changed packages
+        run: melos exec --diff=${{ github.base_ref }} --concurrency=1 -- "dart run build_runner build --delete-conflicting-outputs"

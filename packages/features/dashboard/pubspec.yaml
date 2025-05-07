@@ -4,24 +4,24 @@ version: 0.1.0+1
 publish_to: none
 
 environment:
-  sdk: ^3.5.0
-  flutter: ^3.24.0
+  sdk: ">=3.6.0 <4.0.0"
+
+# Configure for Dart Workspace resolution
+resolution: workspace
 
 dependencies:
-  core_munros_data:
-    path: ../../core/core_munros_data
-  core_theme:
-    path: ../../core/core_theme
+  core_munros_data: any
+  core_theme: any
   flow_builder: ^0.1.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.5
   get_it: 7.2.0
   injectable: ^2.4.2
-  lego_architecture_demo_mason:
-    path: ../../app/starter_app
+  starter_app: any
 
 dev_dependencies:
+  core_analysis: any
   build_runner: ^2.4.9
   flutter_test:
     sdk: flutter

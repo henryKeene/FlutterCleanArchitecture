@@ -1,31 +1,21 @@
-name: settings
-description: The settings page for the app
+name: core_analytics
+description: a package to handle app analytics
 version: 0.1.0+1
 publish_to: none
 
 environment:
   sdk: '>=3.6.0 <4.0.0'
- 
 
 # Configure for Dart Workspace resolution
 resolution: workspace
 
 dependencies:
-  core_authentication: any
-  core_theme: any
-  flow_builder: ^0.1.0
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.5
-  get_it: 7.2.0
-  injectable: ^2.4.2
-  starter_app: any
 
 dev_dependencies:
   core_analysis: any
-  build_runner: ^2.4.9
   flutter_test:
     sdk: flutter
-  injectable_generator: ^2.6.1
   mocktail: ^1.0.4
   very_good_analysis: ^6.0.0

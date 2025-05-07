@@ -1,29 +1,30 @@
-name: settings
-description: The settings page for the app
+name: core_theme
+description: the theme for the app
 version: 0.1.0+1
 publish_to: none
 
 environment:
   sdk: '>=3.6.0 <4.0.0'
- 
 
 # Configure for Dart Workspace resolution
 resolution: workspace
 
 dependencies:
-  core_authentication: any
-  core_theme: any
-  flow_builder: ^0.1.0
+  drift: 2.19.1+1
+  drift_flutter: 0.1.0
+  flex_seed_scheme: ^3.0.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.5
   get_it: 7.2.0
+  google_fonts: ^6.2.1
   injectable: ^2.4.2
   starter_app: any
 
 dev_dependencies:
   core_analysis: any
   build_runner: ^2.4.9
+  drift_dev: 2.19.1
   flutter_test:
     sdk: flutter
   injectable_generator: ^2.6.1

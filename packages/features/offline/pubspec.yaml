@@ -4,13 +4,15 @@ version: 0.1.0+1
 publish_to: none
 
 environment:
-  sdk: ^3.5.0
-  flutter: ^3.24.0
+  sdk: '>=3.6.0 <4.0.0'
+
+# Configure for Dart Workspace resolution
+resolution: workspace
 
 dependencies:
   connectivity_plus: ^6.0.5
   flow_builder: ^0.1.0
-  flutter:
+  flutter: 
     sdk: flutter
   flutter_bloc: ^8.1.5
   fpdart: ^1.1.0
@@ -18,10 +20,10 @@ dependencies:
   freezed_annotation: ^2.4.1
   get_it: 7.2.0
   injectable: ^2.4.2
-  lego_architecture_demo_mason:
-    path: ../../app/starter_app
+  starter_app: any
 
 dev_dependencies:
+  core_analysis: any
   build_runner: ^2.4.9
   flutter_test:
     sdk: flutter

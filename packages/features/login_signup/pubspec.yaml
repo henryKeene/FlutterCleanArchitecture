@@ -4,13 +4,14 @@ version: 0.1.0+1
 publish_to: none
 
 environment:
-  sdk: ^3.5.0
-  flutter: ^3.24.0
+  sdk: ">=3.6.0 <4.0.0"
+
+# Configure for Dart Workspace resolution
+resolution: workspace
 
 dependencies:
   adaptive_dialog: ^2.1.0
-  core_authentication:
-    path: ../../core/core_authentication
+  core_authentication: any
   flow_builder: ^0.1.0
   flutter:
     sdk: flutter
@@ -26,6 +27,7 @@ dependencies:
   json_serializable: ^6.8.0
 
 dev_dependencies:
+  core_analysis: any
   build_runner: ^2.4.9
   flutter_test:
     sdk: flutter

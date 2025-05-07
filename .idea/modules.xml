@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/packages/features/contact/melos_contact.iml" filepath="$PROJECT_DIR$/packages/features/contact/melos_contact.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/core/core_analytics/melos_core_analytics.iml" filepath="$PROJECT_DIR$/packages/core/core_analytics/melos_core_analytics.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/core/core_authentication/melos_core_authentication.iml" filepath="$PROJECT_DIR$/packages/core/core_authentication/melos_core_authentication.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/core/core_logging/melos_core_logging.iml" filepath="$PROJECT_DIR$/packages/core/core_logging/melos_core_logging.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/core/core_munros_data/melos_core_munros_data.iml" filepath="$PROJECT_DIR$/packages/core/core_munros_data/melos_core_munros_data.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/core/core_theme/melos_core_theme.iml" filepath="$PROJECT_DIR$/packages/core/core_theme/melos_core_theme.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/features/dashboard/melos_dashboard.iml" filepath="$PROJECT_DIR$/packages/features/dashboard/melos_dashboard.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/app/starter_app/melos_lego_architecture_demo_mason.iml" filepath="$PROJECT_DIR$/packages/app/starter_app/melos_lego_architecture_demo_mason.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/features/login_signup/melos_login_signup.iml" filepath="$PROJECT_DIR$/packages/features/login_signup/melos_login_signup.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/features/munro_list/melos_munro_list.iml" filepath="$PROJECT_DIR$/packages/features/munro_list/melos_munro_list.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/app/navigation/melos_navigation.iml" filepath="$PROJECT_DIR$/packages/app/navigation/melos_navigation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/features/offline/melos_offline.iml" filepath="$PROJECT_DIR$/packages/features/offline/melos_offline.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/features/settings/melos_settings.iml" filepath="$PROJECT_DIR$/packages/features/settings/melos_settings.iml" />
-      <module fileurl="file://$PROJECT_DIR$/packages/features/team/melos_team.iml" filepath="$PROJECT_DIR$/packages/features/team/melos_team.iml" />
-      <module fileurl="file://$PROJECT_DIR$/melos_starter_app.iml" filepath="$PROJECT_DIR$/melos_starter_app.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/features/contact/melos_contact.iml" filepath="$PROJECT_DIR$/packages/features/contact/melos_contact.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/utilities/core_analytics/melos_core_analytics.iml" filepath="$PROJECT_DIR$/packages/utilities/core_analytics/melos_core_analytics.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/utilities/core_authentication/melos_core_authentication.iml" filepath="$PROJECT_DIR$/packages/utilities/core_authentication/melos_core_authentication.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/utilities/core_logging/melos_core_logging.iml" filepath="$PROJECT_DIR$/packages/utilities/core_logging/melos_core_logging.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/utilities/core_munros_data/melos_core_munros_data.iml" filepath="$PROJECT_DIR$/packages/utilities/core_munros_data/melos_core_munros_data.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/utilities/core_theme/melos_core_theme.iml" filepath="$PROJECT_DIR$/packages/utilities/core_theme/melos_core_theme.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/features/dashboard/melos_dashboard.iml" filepath="$PROJECT_DIR$/packages/features/dashboard/melos_dashboard.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/features/login_signup/melos_login_signup.iml" filepath="$PROJECT_DIR$/packages/features/login_signup/melos_login_signup.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/features/munro_list/melos_munro_list.iml" filepath="$PROJECT_DIR$/packages/features/munro_list/melos_munro_list.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/app/navigation/melos_navigation.iml" filepath="$PROJECT_DIR$/packages/app/navigation/melos_navigation.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/features/offline/melos_offline.iml" filepath="$PROJECT_DIR$/packages/features/offline/melos_offline.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/features/settings/melos_settings.iml" filepath="$PROJECT_DIR$/packages/features/settings/melos_settings.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/app/starter_app/melos_starter_app.iml" filepath="$PROJECT_DIR$/packages/app/starter_app/melos_starter_app.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/features/team/melos_team.iml" filepath="$PROJECT_DIR$/packages/features/team/melos_team.iml" />
+<module fileurl="file://$PROJECT_DIR$/melos_starter_app_root.iml" filepath="$PROJECT_DIR$/melos_starter_app_root.iml" />
     </modules>
   </component>
 </project>

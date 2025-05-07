@@ -3,19 +3,19 @@ description: contact package
 version: 0.1.0+1
 publish_to: none
 
+# Configure for Dart Workspace resolution
+resolution: workspace
+
 environment:
-  sdk: ^3.5.0
-  flutter: ^3.24.0
+  sdk: ">=3.6.0 <4.0.0"
 
 dependencies:
+  core_authentication: any
   flutter:
     sdk: flutter
-  get_it: 7.2.0
-  flutter_bloc: ^8.1.5
-  core_authentication:
-    path: ../../core/core_authentication
 
 dev_dependencies:
+  core_analysis: any
   flutter_test:
     sdk: flutter
   mocktail: ^1.0.4

@@ -1,0 +1,81 @@
+name: Main Branch Release (Live)
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write # Needed to push commit and tag
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Full history needed for versioning
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Flutter with FVM
+        uses: kuhnroyal/flutter-fvm-config-action/setup@v3
+
+      - name: Setup Melos
+        uses: bluefireteam/melos-action@v3
+        with:
+          run-bootstrap: true
+
+      - name: Run all tests
+        run: melos run test
+
+      # Configure Git for versioning and tagging
+      - name: Configure Git User
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      # Run Melos version to update versions and generate changelog
+      - name: Run Melos Version
+        run: melos version --no-git-tag-version
+
+      # Custom application tagging
+      - name: Extract App Version and Create Tag
+        id: tagger
+        run: |
+          # Extract version from the main app's pubspec.yaml
+          APP_VERSION=$(grep '^version:' packages/app/starter_app/pubspec.yaml | sed 's/version: //' | cut -d'+' -f1)
+          echo "Detected App Version: $APP_VERSION"
+          # Set output for later steps
+          echo "app_version=$APP_VERSION" >> $GITHUB_OUTPUT
+          # Create the single application tag
+          git tag "v$APP_VERSION"
+
+      # Push changes and tag
+      - name: Push Changes and Tag
+        run: |
+          git push
+          git push origin "v${{ steps.tagger.outputs.app_version }}"
+
+      # Build production APK
+      - name: Build Live APK
+        run: flutter build apk --flavor live -t lib/main_production.dart
+        working-directory: packages/app/starter_app
+
+      # Upload the APK as an artifact
+      # - name: Upload Live APK
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: app-live-release
+      #     path: packages/app/starter_app/build/app/outputs/flutter-apk/app-live-release.apk
+
+      # Create GitHub Release
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.tagger.outputs.app_version }}
+          name: Release v${{ steps.tagger.outputs.app_version }}
+          body_path: CHANGELOG.md
+          draft: false
+          prerelease: false
+          files: |
+            packages/app/starter_app/build/app/outputs/flutter-apk/app-live-release.apk

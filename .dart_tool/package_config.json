@@ -2,268 +2,1042 @@
   "configVersion": 2,
   "packages": [
     {
-      "name": "ansi_styles",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/ansi_styles-0.3.2+1",
+      "name": "_fe_analyzer_shared",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-76.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.3"
     },
     {
-      "name": "args",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/args-2.5.0",
+      "name": "_flutterfire_internals",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/_flutterfire_internals-1.3.35",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "_macros",
+      "rootUri": "file:///Users/henrykeene/fvm/versions/3.29.3/bin/cache/dart-sdk/pkg/_macros",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "adaptive_dialog",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/adaptive_dialog-2.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "analyzer",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/analyzer-6.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "analyzer_plugin",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/analyzer_plugin-0.11.3",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
-      "name": "async",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/async-2.11.0",
+      "name": "animations",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/animations-2.0.11",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.2"
     },
     {
-      "name": "boolean_selector",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "charcode",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/charcode-1.3.1",
+      "name": "ansi_styles",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/ansi_styles-0.3.2+1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
+      "name": "appkit_ui_element_colors",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/appkit_ui_element_colors-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/args-2.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "async",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/async-2.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "bloc",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/bloc-8.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "bloc_test",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/bloc_test-9.1.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "boolean_selector",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/boolean_selector-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "build",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/build-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "build_config",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/build_config-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "build_daemon",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/build_daemon-4.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "build_resolvers",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/build_resolvers-2.4.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "build_runner",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/build_runner-2.4.14",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "build_runner_core",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/build_runner_core-8.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "built_collection",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/built_collection-5.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "built_value",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/built_value-8.9.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "characters",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/characters-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "charcode",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/charcode-1.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "checked_yaml",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/checked_yaml-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "cli_config",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/cli_config-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "cli_launcher",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/cli_launcher-0.3.1",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/cli_launcher-0.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "cli_util",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/cli_util-0.4.1",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
-    },
-    {
-      "name": "clock",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/clock-1.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "collection",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/collection-1.19.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/cli_util-0.4.2",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
     {
-      "name": "conventional_commit",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/conventional_commit-0.6.0+1",
+      "name": "clock",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/clock-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "code_builder",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/code_builder-4.10.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "collection",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/collection-1.19.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "connectivity_plus",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/connectivity_plus-6.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "connectivity_plus_platform_interface",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/connectivity_plus_platform_interface-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
-      "name": "file",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/file-7.0.0",
+      "name": "conventional_commit",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/conventional_commit-0.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "convert",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/convert-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "coverage",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/coverage-1.13.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "crypto",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/crypto-3.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "csv",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/csv-6.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "dart_style",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/dart_style-2.3.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
+      "name": "dbus",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/dbus-0.7.11",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "diff_match_patch",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/diff_match_patch-0.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "drift",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/drift-2.19.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "drift_dev",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/drift_dev-2.19.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "drift_flutter",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/drift_flutter-0.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "dynamic_color",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/dynamic_color-1.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
+      "name": "equatable",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/equatable-2.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "fake_async",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/fake_async-1.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "ffi",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/ffi-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "file",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/file-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "firebase_auth",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/firebase_auth-4.20.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "firebase_auth_platform_interface",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/firebase_auth_platform_interface-7.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "firebase_auth_web",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/firebase_auth_web-5.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "firebase_core",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/firebase_core-2.32.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/firebase_core_platform_interface-5.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "firebase_core_web",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/firebase_core_web-2.17.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "fixnum",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/fixnum-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "flex_seed_scheme",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/flex_seed_scheme-3.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "flow_builder",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/flow_builder-0.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "flutter",
+      "rootUri": "file:///Users/henrykeene/fvm/versions/3.29.3/packages/flutter",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "flutter_bloc",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/flutter_bloc-8.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_localizations",
+      "rootUri": "file:///Users/henrykeene/fvm/versions/3.29.3/packages/flutter_localizations",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "flutter_test",
+      "rootUri": "file:///Users/henrykeene/fvm/versions/3.29.3/packages/flutter_test",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///Users/henrykeene/fvm/versions/3.29.3/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "fpdart",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/fpdart-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "freezed",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/freezed-2.5.7",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "freezed_annotation",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/freezed_annotation-2.4.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "frontend_server_client",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/frontend_server_client-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "get_it",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/get_it-7.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "glob",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/glob-2.1.2",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/glob-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
+      "name": "go_router",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/go_router-14.8.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "google_fonts",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/google_fonts-6.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "gradient_borders",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/gradient_borders-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "graphs",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/graphs-2.3.2",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/graphs-2.3.2",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/http-1.2.2",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/http-1.2.2",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
     {
+      "name": "http_multi_server",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/http_multi_server-3.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "http_parser",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/http_parser-4.1.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/http_parser-4.1.0",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
     {
+      "name": "injectable",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/injectable-2.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "injectable_generator",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/injectable_generator-2.6.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "intersperse",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/intersperse-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "intl",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/intl-0.19.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/intl-0.19.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "io",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/io-1.0.4",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/io-1.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
+      "name": "js",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/js-0.7.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
       "name": "json_annotation",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/json_annotation-4.9.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/json_annotation-4.9.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "json_serializable",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/json_serializable-6.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "leak_tracker",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/leak_tracker-10.0.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "leak_tracker_flutter_testing",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.9",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "leak_tracker_testing",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "logger",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/logger-2.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/logging-1.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "macos_ui",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/macos_ui-2.1.10",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "macos_window_utils",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/macos_window_utils-1.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "macros",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/macros-0.1.3-main.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "matcher",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/matcher-0.12.16+1",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/matcher-0.12.17",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "material_color_utilities",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/material_color_utilities-0.11.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "melos",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/melos-6.2.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/melos-7.0.0-dev.8",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.6"
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/meta-1.16.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/meta-1.16.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "mime",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/mime-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "mocktail",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/mocktail-1.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "mustache_template",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/mustache_template-2.0.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/mustache_template-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "nm",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/nm-0.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "node_preamble",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/node_preamble-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/package_config-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "path",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/path-1.9.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/path-1.9.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "path_provider",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/path_provider-2.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/path_provider_android-2.2.17",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "path_provider_linux",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/path_provider_platform_interface-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
-      "name": "platform",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/platform-3.1.5",
+      "name": "path_provider_windows",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
+      "name": "petitparser",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/petitparser-6.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "platform",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/platform-3.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "pool",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/pool-1.5.1",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/pool-1.5.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "process",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/process-5.0.2",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/process-5.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "prompts",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/prompts-2.0.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/prompts-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/provider-6.1.5",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "pub_semver",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/pub_semver-2.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.4"
     },
     {
       "name": "pub_updater",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/pub_updater-0.4.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/pub_updater-0.5.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.5"
     },
     {
-      "name": "pubspec",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/pubspec-2.3.0",
+      "name": "pubspec_parse",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/pubspec_parse-1.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "recase",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/recase-4.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
-      "name": "quiver",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/quiver-3.2.2",
+      "name": "shelf",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/shelf-1.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "shelf_packages_handler",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
-      "name": "source_span",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/source_span-1.10.0",
+      "name": "shelf_static",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/shelf_static-1.1.3",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/shelf_web_socket-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "sky_engine",
+      "rootUri": "file:///Users/henrykeene/fvm/versions/3.29.3/bin/cache/pkg/sky_engine",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "source_gen",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/source_gen-1.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "source_helper",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/source_helper-1.3.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "source_map_stack_trace",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "source_maps",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/source_maps-0.10.13",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "source_span",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/source_span-1.10.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "sqlite3",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/sqlite3-2.4.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "sqlite3_flutter_libs",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/sqlite3_flutter_libs-0.5.32",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "sqlparser",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/sqlparser-0.37.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/stack_trace-1.12.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/stack_trace-1.12.1",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
     {
       "name": "stream_channel",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/stream_channel-2.1.2",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/stream_channel-2.1.4",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "stream_transform",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/stream_transform-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
     },
     {
       "name": "string_scanner",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/string_scanner-1.3.0",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/string_scanner-1.4.1",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
     {
       "name": "term_glyph",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/term_glyph-1.2.1",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/term_glyph-1.2.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "test",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/test-1.25.15",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/test_api-0.7.3",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/test_api-0.7.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "test_core",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/test_core-0.6.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "timing",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/timing-1.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
     {
       "name": "typed_data",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/typed_data-1.3.2",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/typed_data-1.3.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
-      "name": "uri",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/uri-1.0.0",
+      "name": "vector_math",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.14"
     },
     {
-      "name": "web",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/web-1.1.0",
+      "name": "very_good_analysis",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/very_good_analysis-6.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
     {
-      "name": "yaml",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/yaml-3.1.2",
+      "name": "vm_service",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/vm_service-14.3.1",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "watcher",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/watcher-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "web",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/web-0.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "web_socket",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/web_socket-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "web_socket_channel",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/web_socket_channel-3.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "webkit_inspection_protocol",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "xdg_directories",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/xdg_directories-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "xml",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/xml-6.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/yaml-3.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "yaml_edit",
-      "rootUri": "file:///Users/henry.keene/.pub-cache/hosted/pub.dev/yaml_edit-2.2.1",
+      "rootUri": "file:///Users/henrykeene/.pub-cache/hosted/pub.dev/yaml_edit-2.2.2",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "starter_app_root",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
     },
     {
       "name": "starter_app",
-      "rootUri": "../",
+      "rootUri": "../packages/app/starter_app",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "navigation",
+      "rootUri": "../packages/app/navigation",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "core_logging",
+      "rootUri": "../packages/utilities/core_logging",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "core_theme",
+      "rootUri": "../packages/utilities/core_theme",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "core_authentication",
+      "rootUri": "../packages/utilities/core_authentication",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "core_munros_data",
+      "rootUri": "../packages/utilities/core_munros_data",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "core_analytics",
+      "rootUri": "../packages/utilities/core_analytics",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "core_analysis",
+      "rootUri": "../packages/utilities/core_analysis",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "contact",
+      "rootUri": "../packages/features/contact",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "dashboard",
+      "rootUri": "../packages/features/dashboard",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "login_signup",
+      "rootUri": "../packages/features/login_signup",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "munro_list",
+      "rootUri": "../packages/features/munro_list",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "offline",
+      "rootUri": "../packages/features/offline",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "settings",
+      "rootUri": "../packages/features/settings",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "team",
+      "rootUri": "../packages/features/team",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
     }
   ],
-  "generated": "2024-10-28T20:31:13.930027Z",
+  "generated": "2025-05-07T16:09:41.904351Z",
   "generator": "pub",
-  "generatorVersion": "3.5.3",
-  "flutterRoot": "file:///Users/henry.keene/fvm/versions/3.22.2",
-  "flutterVersion": "3.24.3",
-  "pubCache": "file:///Users/henry.keene/.pub-cache"
+  "generatorVersion": "3.7.2",
+  "flutterRoot": "file:///Users/henrykeene/fvm/versions/3.29.3",
+  "flutterVersion": "3.29.3",
+  "pubCache": "file:///Users/henrykeene/.pub-cache"
 }
