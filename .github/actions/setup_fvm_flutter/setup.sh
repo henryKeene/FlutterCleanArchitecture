@@ -45,7 +45,7 @@ fvm config --cache-path "$HOME/.fvm/cache"
 
 # Install Flutter using FVM
 echo "Installing Flutter SDK..."
-fvm install --force
+fvm install
 
 # Verify Flutter SDK installation
 FLUTTER_PATH="$(pwd)/.fvm/flutter_sdk"
