@@ -20,20 +20,7 @@ jobs:
       - name: Setup Flutter with FVM
         uses: kuhnroyal/flutter-fvm-config-action/setup@v3
         with:
-          flutter-version: stable
-
-      - name: Configure FVM
-        run: |
-          fvm install
-          fvm flutter --version
-
-      - name: Verify Flutter Installation
-        run: |
-          echo "Flutter SDK path: $FLUTTER_ROOT"
-          flutter --version
-          which flutter
-          which dart
-          echo "Dart SDK path: $(which dart)"
+          path: ".fvmrc"
 
       - name: Setup Melos
         uses: bluefireteam/melos-action@v3
