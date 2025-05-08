@@ -35,6 +35,9 @@ echo "Installing Flutter via FVM..."
 cd "$PROJECT_DIR"
 echo "Changed to directory: $(pwd)"
 
+# Create .fvm directory if it doesn't exist
+mkdir -p .fvm
+
 # Clean up any existing Flutter SDK
 echo "Cleaning up existing Flutter SDK..."
 rm -rf .fvm/flutter_sdk || true
@@ -46,6 +49,11 @@ fvm config --cache-path "$HOME/.fvm/cache"
 # Install Flutter using FVM
 echo "Installing Flutter SDK..."
 fvm install
+
+# Setup Flutter SDK
+echo "Setting up Flutter SDK..."
+fvm flutter doctor
+fvm flutter precache
 
 # Verify Flutter SDK installation
 FLUTTER_PATH="$(pwd)/.fvm/flutter_sdk"
