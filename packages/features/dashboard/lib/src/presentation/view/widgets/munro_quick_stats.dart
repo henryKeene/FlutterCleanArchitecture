@@ -1,7 +1,7 @@
 import 'package:core_munros_data/core_munros_data.dart';
 import 'package:dashboard/src/presentation/cubits/dashboard_cubit/dashboard_cubit.dart';
 import 'package:flutter/material.dart';
-import 'package:lego_architecture_demo_mason/app/extensions/build_context_extensions.dart';
+import 'package:starter_app/app/extensions/build_context_extensions.dart';
 
 class MunroQuickStats extends StatelessWidget {
   const MunroQuickStats({required this.state, super.key});

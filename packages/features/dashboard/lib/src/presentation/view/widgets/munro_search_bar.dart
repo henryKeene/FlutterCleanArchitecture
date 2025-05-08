@@ -2,7 +2,7 @@ import 'package:core_munros_data/core_munros_data.dart';
 import 'package:dashboard/src/presentation/cubits/search_cubit/search_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lego_architecture_demo_mason/app/extensions/build_context_extensions.dart';
+import 'package:starter_app/app/extensions/build_context_extensions.dart';
 
 class MunroSearchBar extends StatelessWidget {
   const MunroSearchBar({super.key});

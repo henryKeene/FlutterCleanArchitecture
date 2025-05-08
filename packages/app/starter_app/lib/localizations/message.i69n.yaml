@@ -1,0 +1,5 @@
+login_signup:
+  login: login
+  email: email
+  password: password
+  login_button: login

@@ -487,22 +487,142 @@ typedef $$MunroTableTableUpdateCompanionBuilder = MunroTableCompanion Function({
   Value<String?> notes,
 });
 
+class $$MunroTableTableFilterComposer
+    extends Composer<_$MunroDatabase, $MunroTableTable> {
+  $$MunroTableTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get id => $composableBuilder(
+      column: $table.id, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<String> get name => $composableBuilder(
+      column: $table.name, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<int> get regionId => $composableBuilder(
+      column: $table.regionId, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<int> get height => $composableBuilder(
+      column: $table.height, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<int> get xcoord => $composableBuilder(
+      column: $table.xcoord, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<int> get ycoord => $composableBuilder(
+      column: $table.ycoord, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<bool> get climbed => $composableBuilder(
+      column: $table.climbed, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<DateTime> get dateClimbed => $composableBuilder(
+      column: $table.dateClimbed, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<String> get notes => $composableBuilder(
+      column: $table.notes, builder: (column) => ColumnFilters(column));
+}
+
+class $$MunroTableTableOrderingComposer
+    extends Composer<_$MunroDatabase, $MunroTableTable> {
+  $$MunroTableTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get id => $composableBuilder(
+      column: $table.id, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<String> get name => $composableBuilder(
+      column: $table.name, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<int> get regionId => $composableBuilder(
+      column: $table.regionId, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<int> get height => $composableBuilder(
+      column: $table.height, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<int> get xcoord => $composableBuilder(
+      column: $table.xcoord, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<int> get ycoord => $composableBuilder(
+      column: $table.ycoord, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<bool> get climbed => $composableBuilder(
+      column: $table.climbed, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<DateTime> get dateClimbed => $composableBuilder(
+      column: $table.dateClimbed, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<String> get notes => $composableBuilder(
+      column: $table.notes, builder: (column) => ColumnOrderings(column));
+}
+
+class $$MunroTableTableAnnotationComposer
+    extends Composer<_$MunroDatabase, $MunroTableTable> {
+  $$MunroTableTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<String> get name =>
+      $composableBuilder(column: $table.name, builder: (column) => column);
+
+  GeneratedColumn<int> get regionId =>
+      $composableBuilder(column: $table.regionId, builder: (column) => column);
+
+  GeneratedColumn<int> get height =>
+      $composableBuilder(column: $table.height, builder: (column) => column);
+
+  GeneratedColumn<int> get xcoord =>
+      $composableBuilder(column: $table.xcoord, builder: (column) => column);
+
+  GeneratedColumn<int> get ycoord =>
+      $composableBuilder(column: $table.ycoord, builder: (column) => column);
+
+  GeneratedColumn<bool> get climbed =>
+      $composableBuilder(column: $table.climbed, builder: (column) => column);
+
+  GeneratedColumn<DateTime> get dateClimbed => $composableBuilder(
+      column: $table.dateClimbed, builder: (column) => column);
+
+  GeneratedColumn<String> get notes =>
+      $composableBuilder(column: $table.notes, builder: (column) => column);
+}
+
 class $$MunroTableTableTableManager extends RootTableManager<
     _$MunroDatabase,
     $MunroTableTable,
     MunroTableData,
     $$MunroTableTableFilterComposer,
     $$MunroTableTableOrderingComposer,
+    $$MunroTableTableAnnotationComposer,
     $$MunroTableTableCreateCompanionBuilder,
-    $$MunroTableTableUpdateCompanionBuilder> {
+    $$MunroTableTableUpdateCompanionBuilder,
+    (
+      MunroTableData,
+      BaseReferences<_$MunroDatabase, $MunroTableTable, MunroTableData>
+    ),
+    MunroTableData,
+    PrefetchHooks Function()> {
   $$MunroTableTableTableManager(_$MunroDatabase db, $MunroTableTable table)
       : super(TableManagerState(
           db: db,
           table: table,
-          filteringComposer:
-              $$MunroTableTableFilterComposer(ComposerState(db, table)),
-          orderingComposer:
-              $$MunroTableTableOrderingComposer(ComposerState(db, table)),
+          createFilteringComposer: () =>
+              $$MunroTableTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $$MunroTableTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$MunroTableTableAnnotationComposer($db: db, $table: table),
           updateCompanionCallback: ({
             Value<int> id = const Value.absent(),
             Value<String> name = const Value.absent(),
@@ -547,106 +667,28 @@ class $$MunroTableTableTableManager extends RootTableManager<
             dateClimbed: dateClimbed,
             notes: notes,
           ),
+          withReferenceMapper: (p0) => p0
+              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
+              .toList(),
+          prefetchHooksCallback: null,
         ));
 }
 
-class $$MunroTableTableFilterComposer
-    extends FilterComposer<_$MunroDatabase, $MunroTableTable> {
-  $$MunroTableTableFilterComposer(super.$state);
-  ColumnFilters<int> get id => $state.composableBuilder(
-      column: $state.table.id,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<String> get name => $state.composableBuilder(
-      column: $state.table.name,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<int> get regionId => $state.composableBuilder(
-      column: $state.table.regionId,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<int> get height => $state.composableBuilder(
-      column: $state.table.height,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<int> get xcoord => $state.composableBuilder(
-      column: $state.table.xcoord,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<int> get ycoord => $state.composableBuilder(
-      column: $state.table.ycoord,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<bool> get climbed => $state.composableBuilder(
-      column: $state.table.climbed,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<DateTime> get dateClimbed => $state.composableBuilder(
-      column: $state.table.dateClimbed,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<String> get notes => $state.composableBuilder(
-      column: $state.table.notes,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-}
-
-class $$MunroTableTableOrderingComposer
-    extends OrderingComposer<_$MunroDatabase, $MunroTableTable> {
-  $$MunroTableTableOrderingComposer(super.$state);
-  ColumnOrderings<int> get id => $state.composableBuilder(
-      column: $state.table.id,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<String> get name => $state.composableBuilder(
-      column: $state.table.name,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<int> get regionId => $state.composableBuilder(
-      column: $state.table.regionId,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<int> get height => $state.composableBuilder(
-      column: $state.table.height,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<int> get xcoord => $state.composableBuilder(
-      column: $state.table.xcoord,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<int> get ycoord => $state.composableBuilder(
-      column: $state.table.ycoord,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<bool> get climbed => $state.composableBuilder(
-      column: $state.table.climbed,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<DateTime> get dateClimbed => $state.composableBuilder(
-      column: $state.table.dateClimbed,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<String> get notes => $state.composableBuilder(
-      column: $state.table.notes,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-}
+typedef $$MunroTableTableProcessedTableManager = ProcessedTableManager<
+    _$MunroDatabase,
+    $MunroTableTable,
+    MunroTableData,
+    $$MunroTableTableFilterComposer,
+    $$MunroTableTableOrderingComposer,
+    $$MunroTableTableAnnotationComposer,
+    $$MunroTableTableCreateCompanionBuilder,
+    $$MunroTableTableUpdateCompanionBuilder,
+    (
+      MunroTableData,
+      BaseReferences<_$MunroDatabase, $MunroTableTable, MunroTableData>
+    ),
+    MunroTableData,
+    PrefetchHooks Function()>;
 
 class $MunroDatabaseManager {
   final _$MunroDatabase _db;

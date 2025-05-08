@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lego_architecture_demo_mason/app/constants/app_constants.dart';
+import 'package:starter_app/app/constants/app_constants.dart';
 
 // This [showAppAboutDialog] function is based on the [AboutDialog] example
 // that exist(ed) in the Flutter Gallery App.

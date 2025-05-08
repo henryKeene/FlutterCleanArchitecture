@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lego_architecture_demo_mason/app/extensions/build_context_extensions.dart';
 import 'package:offline/src/presentation/views/pages/offline_page.dart';
+import 'package:starter_app/app/extensions/build_context_extensions.dart';
 
 class OfflineFlow extends StatefulWidget {
   const OfflineFlow({super.key});

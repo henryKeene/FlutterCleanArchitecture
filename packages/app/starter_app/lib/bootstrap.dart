@@ -4,8 +4,8 @@ import 'dart:developer';
 import 'package:bloc/bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/widgets.dart';
-import 'package:lego_architecture_demo_mason/di/di_initializer.dart';
-import 'package:lego_architecture_demo_mason/firebase_options.dart';
+import 'package:starter_app/di/di_initializer.dart';
+import 'package:starter_app/firebase_options.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();

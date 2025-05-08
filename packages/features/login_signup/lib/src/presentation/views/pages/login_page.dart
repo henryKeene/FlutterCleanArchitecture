@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:login_signup/src/presentation/blocs/auth_cubit/auth_cubit.dart';
 import 'package:login_signup/src/presentation/flow/authentication_flow_state.dart';
+import 'package:starter_app/localizations/custom_localizations.dart';
+import 'package:starter_app/localizations/message.i69n.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -37,6 +39,8 @@ class LoginPage extends StatelessWidget {
             : null;
       },
       builder: (context, state) {
+        final text = context.translations.login_signup;
+
         String? errorText;
         if (state.failure.isSome()) {
           state.failure.fold(() {}, (failure) {
@@ -45,7 +49,7 @@ class LoginPage extends StatelessWidget {
         }
         return Scaffold(
           appBar: AppBar(
-            title: const Text('Login'),
+            title: Text(text.login),
           ),
           body: Padding(
             padding: const EdgeInsets.all(16),
@@ -55,7 +59,7 @@ class LoginPage extends StatelessWidget {
                 children: [
                   TextFormField(
                     forceErrorText: errorText,
-                    decoration: const InputDecoration(labelText: 'Email'),
+                    decoration: InputDecoration(labelText: text.email),
                     onChanged: (value) =>
                         context.read<AuthCubit>().emailChanged(value),
                   ),
@@ -63,7 +67,7 @@ class LoginPage extends StatelessWidget {
                     height: 16,
                   ),
                   TextFormField(
-                    decoration: const InputDecoration(labelText: 'Password'),
+                    decoration: InputDecoration(labelText: text.password),
                     obscureText: true,
                     onChanged: (value) =>
                         context.read<AuthCubit>().passwordChanged(value),
@@ -83,7 +87,7 @@ class LoginPage extends StatelessWidget {
                             padding: EdgeInsets.all(8),
                             child: CircularProgressIndicator(),
                           )
-                        : const Text('Login'),
+                        : Text(text.login_button),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

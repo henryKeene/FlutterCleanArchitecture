@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flex_seed_scheme/flex_seed_scheme.dart';
 import 'package:flutter/material.dart';
-import 'package:lego_architecture_demo_mason/app/extensions/color_extensions.dart';
-import 'package:lego_architecture_demo_mason/app/extensions/copy_color_to_clipboard.dart';
+import 'package:starter_app/app/extensions/color_extensions.dart';
+import 'package:starter_app/app/extensions/copy_color_to_clipboard.dart';
 
 const Size _colorChipSize = Size(160, 50);
 const Size _equalFourChipSize = Size(160, 43);

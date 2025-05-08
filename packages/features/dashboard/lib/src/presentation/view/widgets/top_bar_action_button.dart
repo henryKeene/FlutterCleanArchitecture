@@ -1,6 +1,6 @@
 import 'package:dashboard/src/domain/enum/top_bar_action_button_enums.dart';
 import 'package:flutter/material.dart';
-import 'package:lego_architecture_demo_mason/app/extensions/build_context_extensions.dart';
+import 'package:starter_app/app/extensions/build_context_extensions.dart';
 
 class TopBarActionButton extends StatelessWidget {
   const TopBarActionButton({

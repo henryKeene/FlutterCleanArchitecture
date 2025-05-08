@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:lego_architecture_demo_mason/app/extensions/color_extensions.dart';
+import 'package:starter_app/app/extensions/color_extensions.dart';
 
 /// Copy the color value as a String to the Clipboard in Flutter Dart format.
 ///

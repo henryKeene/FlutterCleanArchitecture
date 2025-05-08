@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lego_architecture_demo_mason/app/extensions/build_context_extensions.dart';
 import 'package:settings/src/presentation/cubit/cubit/settings_cubit.dart';
+import 'package:starter_app/app/extensions/build_context_extensions.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});

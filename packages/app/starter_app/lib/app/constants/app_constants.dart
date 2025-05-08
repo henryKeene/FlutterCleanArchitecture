@@ -11,6 +11,6 @@ class AppConstants {
   static const String copyright = '© 2024';
   static const String license = 'BSD 3-Clause License';
   static const String flutterVersion = 'stable 3.22.2';
-  static String title(BuildContext context) =>
-      (context as Element).findAncestorWidgetOfExactType<MaterialApp>()!.title;
+  static String? title(BuildContext context) =>
+      (context as Element).findAncestorWidgetOfExactType<MaterialApp>()?.title;
 }

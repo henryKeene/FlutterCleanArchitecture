@@ -25,11 +25,22 @@ workspace:
 dependencies:
   get_it: 7.2.0
   flutter_bloc: ^8.1.5
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.0
+  i69n: ^3.1.0
 
 dev_dependencies:
   melos: ^7.0.0-dev.8
   mocktail: ^1.0.4
   very_good_analysis: ^6.0.0
+
+# Override dependencies for all packages in the workspace
+dependency_overrides:
+  intl: ^0.18.0
+  drift_dev: ^2.26.1
+  drift: ^2.26.1
+  firebase_core: ^3.4.1
 
 # Melos configuration
 melos:
@@ -63,8 +74,23 @@ melos:
       description: Run dart format in all packages.
       run: melos exec --concurrency=5 -- "dart format ."
 
+    generate_l10n:
+      description: Generate Dart localization files for all packages with lib/l10n.
+      run: |
+        melos exec --dir-exists=lib/l10n -- \
+          "mkdir -p lib/l10n/generated && \
+          dart run intl_translation:generate_from_arb \
+          --output-dir=lib/l10n/generated \
+          --no-use-deferred-loading \
+          lib/l10n/l10n.dart \
+          lib/l10n/intl_*.arb"
+
   # Command configurations
   command:
+    bootstrap:
+      dependencies:
+        intl: ^0.18.0
+
     version:
       # Enable automated version calculation and changelog generation
       version: true

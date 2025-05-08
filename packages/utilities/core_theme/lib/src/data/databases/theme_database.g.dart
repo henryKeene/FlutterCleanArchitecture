@@ -205,22 +205,79 @@ typedef $$ThemeTableTableUpdateCompanionBuilder = ThemeTableCompanion Function({
   Value<bool> isSelected,
 });
 
+class $$ThemeTableTableFilterComposer
+    extends Composer<_$ThemeDatabase, $ThemeTableTable> {
+  $$ThemeTableTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get id => $composableBuilder(
+      column: $table.id, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<bool> get isSelected => $composableBuilder(
+      column: $table.isSelected, builder: (column) => ColumnFilters(column));
+}
+
+class $$ThemeTableTableOrderingComposer
+    extends Composer<_$ThemeDatabase, $ThemeTableTable> {
+  $$ThemeTableTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get id => $composableBuilder(
+      column: $table.id, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<bool> get isSelected => $composableBuilder(
+      column: $table.isSelected, builder: (column) => ColumnOrderings(column));
+}
+
+class $$ThemeTableTableAnnotationComposer
+    extends Composer<_$ThemeDatabase, $ThemeTableTable> {
+  $$ThemeTableTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<bool> get isSelected => $composableBuilder(
+      column: $table.isSelected, builder: (column) => column);
+}
+
 class $$ThemeTableTableTableManager extends RootTableManager<
     _$ThemeDatabase,
     $ThemeTableTable,
     ThemeTableData,
     $$ThemeTableTableFilterComposer,
     $$ThemeTableTableOrderingComposer,
+    $$ThemeTableTableAnnotationComposer,
     $$ThemeTableTableCreateCompanionBuilder,
-    $$ThemeTableTableUpdateCompanionBuilder> {
+    $$ThemeTableTableUpdateCompanionBuilder,
+    (
+      ThemeTableData,
+      BaseReferences<_$ThemeDatabase, $ThemeTableTable, ThemeTableData>
+    ),
+    ThemeTableData,
+    PrefetchHooks Function()> {
   $$ThemeTableTableTableManager(_$ThemeDatabase db, $ThemeTableTable table)
       : super(TableManagerState(
           db: db,
           table: table,
-          filteringComposer:
-              $$ThemeTableTableFilterComposer(ComposerState(db, table)),
-          orderingComposer:
-              $$ThemeTableTableOrderingComposer(ComposerState(db, table)),
+          createFilteringComposer: () =>
+              $$ThemeTableTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $$ThemeTableTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$ThemeTableTableAnnotationComposer($db: db, $table: table),
           updateCompanionCallback: ({
             Value<int> id = const Value.absent(),
             Value<bool> isSelected = const Value.absent(),
@@ -237,36 +294,28 @@ class $$ThemeTableTableTableManager extends RootTableManager<
             id: id,
             isSelected: isSelected,
           ),
+          withReferenceMapper: (p0) => p0
+              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
+              .toList(),
+          prefetchHooksCallback: null,
         ));
 }
 
-class $$ThemeTableTableFilterComposer
-    extends FilterComposer<_$ThemeDatabase, $ThemeTableTable> {
-  $$ThemeTableTableFilterComposer(super.$state);
-  ColumnFilters<int> get id => $state.composableBuilder(
-      column: $state.table.id,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<bool> get isSelected => $state.composableBuilder(
-      column: $state.table.isSelected,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-}
-
-class $$ThemeTableTableOrderingComposer
-    extends OrderingComposer<_$ThemeDatabase, $ThemeTableTable> {
-  $$ThemeTableTableOrderingComposer(super.$state);
-  ColumnOrderings<int> get id => $state.composableBuilder(
-      column: $state.table.id,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<bool> get isSelected => $state.composableBuilder(
-      column: $state.table.isSelected,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-}
+typedef $$ThemeTableTableProcessedTableManager = ProcessedTableManager<
+    _$ThemeDatabase,
+    $ThemeTableTable,
+    ThemeTableData,
+    $$ThemeTableTableFilterComposer,
+    $$ThemeTableTableOrderingComposer,
+    $$ThemeTableTableAnnotationComposer,
+    $$ThemeTableTableCreateCompanionBuilder,
+    $$ThemeTableTableUpdateCompanionBuilder,
+    (
+      ThemeTableData,
+      BaseReferences<_$ThemeDatabase, $ThemeTableTable, ThemeTableData>
+    ),
+    ThemeTableData,
+    PrefetchHooks Function()>;
 
 class $ThemeDatabaseManager {
   final _$ThemeDatabase _db;

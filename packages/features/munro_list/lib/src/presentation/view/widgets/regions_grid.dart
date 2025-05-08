@@ -1,8 +1,8 @@
 import 'package:core_munros_data/core_munros_data.dart';
 import 'package:flow_builder/flow_builder.dart';
 import 'package:flutter/material.dart';
-import 'package:lego_architecture_demo_mason/app/extensions/build_context_extensions.dart';
 import 'package:munro_list/src/presentation/flow/munro_list_flow_state.dart';
+import 'package:starter_app/app/extensions/build_context_extensions.dart';
 
 class RegionsGrid extends StatelessWidget {
   const RegionsGrid({required this.regionsAndMunros, super.key});
