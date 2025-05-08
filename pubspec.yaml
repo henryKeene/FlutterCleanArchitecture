@@ -1,6 +1,6 @@
 name: starter_app_root
 environment:
-  sdk: '>=3.6.0 <4.0.0'
+  sdk: ">=3.6.0 <4.0.0"
 
 # Define the packages included in the workspace
 workspace:
@@ -44,7 +44,7 @@ melos:
 
     test:
       description: Run flutter test in all packages with tests.
-      run: melos exec --concurrency=5 --dir-exists=test --fail-fast -- "flutter test --coverage"
+      run: melos exec --concurrency=5 --dir-exists=test --fail-fast -- "flutter test"
 
     test:diff:
       description: Run tests only on packages changed since the main branch.
@@ -80,7 +80,7 @@ melos:
       gitTagVersion: false
 
       # Customize the commit message for version bumps
-      message: 'chore(release): Prepare release {new_package_versions}'
+      message: "chore(release): Prepare release {new_package_versions}"
 
       # Hooks for the version command
       hooks:
