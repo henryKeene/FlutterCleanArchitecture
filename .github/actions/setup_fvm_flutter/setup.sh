@@ -9,6 +9,10 @@ echo "Runner OS: $RUNNER_OS"
 
 echo "Installing FVM..."
 
+# Clean up any existing FVM configuration in home directory
+rm -rf "$HOME/.fvm" || true
+rm -f "$HOME/.fvmrc" || true
+
 mkdir -p "$HOME/.fvm"
 echo "Created FVM directory at $HOME/.fvm"
 
@@ -35,12 +39,9 @@ echo "Installing Flutter via FVM..."
 cd "$PROJECT_DIR"
 echo "Changed to directory: $(pwd)"
 
-# Create .fvm directory if it doesn't exist
-mkdir -p .fvm
-
 # Clean up any existing Flutter SDK
 echo "Cleaning up existing Flutter SDK..."
-rm -rf .fvm/flutter_sdk || true
+rm -rf .fvm || true
 
 # Ensure FVM is properly configured
 echo "Configuring FVM..."
@@ -58,8 +59,14 @@ fvm flutter precache
 # Verify Flutter SDK installation
 FLUTTER_PATH="$(pwd)/.fvm/flutter_sdk"
 echo "Checking Flutter SDK at: $FLUTTER_PATH"
+
+# Wait for Flutter SDK to be properly installed
+echo "Waiting for Flutter SDK installation to complete..."
+sleep 5
+
+# Check if Flutter SDK directory exists and has content
 if [ ! -d "$FLUTTER_PATH" ]; then
-  echo "Error: Flutter SDK installation failed"
+  echo "Error: Flutter SDK directory not found at $FLUTTER_PATH"
   echo "Checking FVM status..."
   fvm list
   echo "FVM configuration:"
