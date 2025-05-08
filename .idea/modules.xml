@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
 <module fileurl="file://$PROJECT_DIR$/packages/features/contact/melos_contact.iml" filepath="$PROJECT_DIR$/packages/features/contact/melos_contact.iml" />
+<module fileurl="file://$PROJECT_DIR$/packages/utilities/core_analysis/melos_core_analysis.iml" filepath="$PROJECT_DIR$/packages/utilities/core_analysis/melos_core_analysis.iml" />
 <module fileurl="file://$PROJECT_DIR$/packages/utilities/core_analytics/melos_core_analytics.iml" filepath="$PROJECT_DIR$/packages/utilities/core_analytics/melos_core_analytics.iml" />
 <module fileurl="file://$PROJECT_DIR$/packages/utilities/core_authentication/melos_core_authentication.iml" filepath="$PROJECT_DIR$/packages/utilities/core_authentication/melos_core_authentication.iml" />
 <module fileurl="file://$PROJECT_DIR$/packages/utilities/core_logging/melos_core_logging.iml" filepath="$PROJECT_DIR$/packages/utilities/core_logging/melos_core_logging.iml" />
