@@ -1,0 +1,14 @@
+name: 'Install FVM & Flutter'
+description: 'Sets up FVM and Flutter using FVM, adds them to PATH, and verifies installation.'
+inputs:
+  flutter_project_folder_path:
+    description: 'Path to the Flutter project (where pubspec.yaml is located)'
+    required: false
+    default: '.'
+runs:
+  using: 'composite'
+  steps:
+    - name: Run FVM & Flutter setup
+      shell: bash
+      run: |
+        bash "${{ github.action_path }}/setup.sh" "${{ inputs.flutter_project_folder_path }}"

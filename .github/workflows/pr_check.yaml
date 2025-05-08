@@ -14,21 +14,16 @@ jobs:
           # Fetch history for accurate diff
           fetch-depth: 0
 
-      - name: Setup Flutter with FVM
-        uses: kuhnroyal/flutter-fvm-config-action/setup@v3
-
-      - name: Verify Flutter Installation
-        run: |
-          echo "Flutter SDK path: $FLUTTER_ROOT"
-          flutter --version
-          which flutter
-          which dart
+      - name: Install FVM & Flutter
+        uses: ./.github/actions/setup_fvm_flutter
+        with:
+          flutter_project_folder_path: packages/app/starter_app
 
       - name: Setup Melos
         uses: bluefireteam/melos-action@v3
         with:
           run-bootstrap: true
-          melos-version: "^7.0.0-dev.8"
+          melos-version: '^7.0.0-dev.8'
 
       - name: Analyze code
         run: melos run analyze

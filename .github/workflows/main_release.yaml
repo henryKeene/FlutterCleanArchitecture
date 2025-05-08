@@ -17,21 +17,16 @@ jobs:
           fetch-depth: 0 # Full history needed for versioning
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Configure FVM
-        uses: kuhnroyal/flutter-fvm-config-action/config@v3
-        id: fvm-config-action
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
+      - name: Install FVM & Flutter
+        uses: ./.github/actions/setup_fvm_flutter
         with:
-          flutter-version: ${{ steps.fvm-config-action.outputs.FLUTTER_VERSION }}
-          channel: ${{ steps.fvm-config-action.outputs.FLUTTER_CHANNEL }}
+          flutter_project_folder_path: packages/app/starter_app
 
       - name: Setup Melos
         uses: bluefireteam/melos-action@v3
         with:
           run-bootstrap: true
-          melos-version: "^7.0.0-dev.8"
+          melos-version: '^7.0.0-dev.8'
 
       - name: Run all tests
         run: melos run test

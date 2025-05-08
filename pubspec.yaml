@@ -1,6 +1,6 @@
 name: starter_app_root
 environment:
-  sdk: ">=3.6.0 <4.0.0"
+  sdk: '>=3.6.0 <4.0.0'
 
 # Define the packages included in the workspace
 workspace:
@@ -52,7 +52,8 @@ melos:
 
     build_runner:all:
       description: Run build_runner build in all packages.
-      run: melos exec --concurrency=1 -- "dart run build_runner build --delete-conflicting-outputs"
+      run: melos exec  --depends-on=build_runner -- "dart run build_runner build --delete-conflicting-outputs"
+      orderDependents: true
 
     build_runner:diff:
       description: Run build_runner only on changed packages.
@@ -79,7 +80,7 @@ melos:
       gitTagVersion: false
 
       # Customize the commit message for version bumps
-      message: "chore(release): Prepare release {new_package_versions}"
+      message: 'chore(release): Prepare release {new_package_versions}'
 
       # Hooks for the version command
       hooks:
