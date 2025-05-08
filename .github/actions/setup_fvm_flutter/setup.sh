@@ -42,7 +42,6 @@ rm -rf .fvm/flutter_sdk || true
 # Ensure FVM is properly configured
 echo "Configuring FVM..."
 fvm config --cache-path "$HOME/.fvm/cache"
-fvm config --flutter-sdk-path "$HOME/.fvm/flutter_sdk"
 
 # Install Flutter using FVM
 echo "Installing Flutter SDK..."
