@@ -1,0 +1,15 @@
+name: core_di
+description: A dependency injection library for this project
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+resolution: workspace
+
+dependencies:
+  get_it: ^7.2.0
+
+dev_dependencies:
+  core_analysis: any

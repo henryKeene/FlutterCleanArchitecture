@@ -980,6 +980,18 @@
       "languageVersion": "3.6"
     },
     {
+      "name": "core_prelude",
+      "rootUri": "../packages/utilities/core_prelude",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "core_di",
+      "rootUri": "../packages/utilities/core_di",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
       "name": "contact",
       "rootUri": "../packages/features/contact",
       "packageUri": "lib/",
@@ -1022,7 +1034,7 @@
       "languageVersion": "3.6"
     }
   ],
-  "generated": "2025-05-08T19:22:58.104003Z",
+  "generated": "2025-05-14T20:14:52.046791Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///Users/henrykeene/fvm/versions/3.29.3",

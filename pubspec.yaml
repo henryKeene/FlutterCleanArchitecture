@@ -13,6 +13,8 @@ workspace:
   - packages/utilities/core_munros_data
   - packages/utilities/core_analytics
   - packages/utilities/core_analysis
+  - packages/utilities/core_prelude
+  - packages/utilities/core_di
 
   - packages/features/contact
   - packages/features/dashboard
